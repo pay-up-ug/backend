@@ -1,6 +1,6 @@
-# payup-backend
+### payup-backend
 apis
-##add user
+### add user
 
 POST  http://localhost:8080/users/Createuser
 Content-Type: application/json
@@ -11,7 +11,7 @@ Content-Type: application/json
      "email":"khlaif@gmail.com",
      "password":"name"
 }
-##Login
+### Login
 POST  http://localhost:8080/users/login
 Content-Type: application/json
 
@@ -20,14 +20,14 @@ Content-Type: application/json
      "password":"name"
 }
 
-## generate keys
+### generate keys
 GET  http://localhost:8080/users/generatekeys/62fc0b1cd6ce9a2d54b5366c
 Content-Type: application/json
 x-access-token: token
 
 
 
-##API mobile money
+### API mobile money
 POST  http://localhost:8080/api/playground/v1/mobilepay/payup.62ef74d68653ee35f486fe87.6c64a507-250c-4b82-a42c-d455d8a2b874
 Content-Type: application/json
 
@@ -40,7 +40,7 @@ Content-Type: application/json
         "contact":"90097565443"
     }
 }
-##API mobile tracking
+### API mobile tracking
 GET   http://localhost:8080/api/playground/v1/mobilepay/track/payup.62fc0b1cd6ce9a2d54b5366c.36724738-158a-4452-bdce-5267cfea00d3
 Content-Type: application/json
 
@@ -48,7 +48,7 @@ Content-Type: application/json
     "internalId":"62fc0e9773829f28c48acd19"
 }
 
-## card payment
+### card payment
 POST  http://localhost:8080/api/playground/v1/cardpayment/payup.63021858e064723324a6d2aa.0b998fba-2400-46b9-b7e9-63cb08a289bd
 Content-Type: application/json
 
@@ -62,14 +62,14 @@ Content-Type: application/json
         "contact":"90097565443"
     }
 }
-## card payment tracking
+### card payment tracking
 GET  http://localhost:8080/api/playground/v1/cardpayment/track/payup.63021858e064723324a6d2aa.3746e285-6360-4ef4-8e2b-7ca311660ab4
 Content-Type: application/json
 
 {
     "id":"63028fc5931cca2980ce94b4"
 }
-## link creating seller
+### link creating seller
 POST  http://localhost:8080/links/createseller
 Content-Type: application/json
 x-access-token: token

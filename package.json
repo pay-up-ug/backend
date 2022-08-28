@@ -1,0 +1,35 @@
+{
+  "name": "payubackend",
+  "version": "1.0.0",
+  "description": "payup node js backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "khalifan Muwonge",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "chalk": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "generate-api-key": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.5",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12",
+    "object-hash": "^3.0.0",
+    "uuid": "^8.3.2"
+  }
+}

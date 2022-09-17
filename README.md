@@ -27,7 +27,7 @@ Content-Type: application/json`
 ```
 
 ### generate keys
-`GET  http://localhost:8080/users/generatekeys/62fc0b1cd6ce9a2d54b5366c`
+`POST  http://localhost:8080/users/generatekeys/62fc0b1cd6ce9a2d54b5366c`
 `
 Content-Type: application/json
 x-access-token: token

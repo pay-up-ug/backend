@@ -7,7 +7,7 @@ module.exports = app => {
   
     router.post("/Createuser",users.Createuser);
     router.post("/login", users.login);
-    router.get("/generatekeys/:id",auth, users.generateKeys);
+    router.post("/generatekeys/:id",auth, users.generateKeys);
 
    // router.get("/information",auth, users.Getuser);
     

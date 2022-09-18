@@ -1,8 +1,7 @@
-POST  http://localhost:8080/links/return
+POST  http://localhost:8080/links/
 Content-Type: application/json
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjMwMjE4NThlMDY0NzIzMzI0YTZkMmFhIiwiZW1haWwiOiJraGxhaWZAZ21haWwuY29tIiwiaWF0IjoxNjYxNjQwNzc1LCJleHAiOjE2NjE2NDQzNzV9.WhytPfIyKNSbv--rlL6pAtvGHmIujwXEdm7DlzJ0mlQ
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjMxZTVkYWQyYjRkM2IwMDA0NGZlMmMzIiwiZW1haWwiOiJyYWluQGdtYWlsLmNvbSIsImlhdCI6MTY2MzUwODY1MSwiZXhwIjoxNjYzNTEyMjUxfQ.xKQG26MSj6TuPWN0hXMPyAudIvxaoNQ9LX31rfudpFs
 
 {
-     "linkId":"6307f3248035ce359c1c06b4",
      "userId":"63021858e064723324a6d2aa"
 }

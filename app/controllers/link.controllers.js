@@ -178,7 +178,8 @@ exports.GetAllLinks = async (req, res) =>{
     if (!(userId)) {
         return res.status(500).send({message:"No user spacified"});
     }
-    links.find({ownerId: userId})
+    links.find({ $or: [ { sellerId: userId },
+       { buyerId: userId } ] })
     .then(data => {
       //res.send(data);
       if( data !== null){
@@ -191,7 +192,7 @@ exports.GetAllLinks = async (req, res) =>{
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving books."
+          err.message || "Some error occurred while retrieving links."
       });
     });
    

@@ -8,7 +8,7 @@ module.exports = app => {
     router.post("/createbuyer",auth, link.createLinkBuyer);
     router.post("/createseller",auth, link.createLinkSeller);
     //get all links
-    router.get("/",auth, link.GetAllLinks);
+    router.post("/",auth, link.GetAllLinks);
     //get specific link
     router.get("/:id",auth, link.GetSingleLink);
     // add to link

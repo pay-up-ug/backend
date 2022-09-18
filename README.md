@@ -129,7 +129,7 @@ x-access-token: token
 `x-access-token: token`
 
 ### get all links
-`GET  http://localhost:8080/links`
+`POST  http://localhost:8080/links`
 `Content-Type: application/json`
 `x-access-token: token`
 

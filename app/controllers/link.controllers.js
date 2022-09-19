@@ -18,7 +18,12 @@ function sleep(ms) {
   }
 exports.createLinkSeller = async (req, res) =>{
     const { 
-        title,description,ownerId,ownerType,sellerId,sellerName,amount,sellerContact,
+        title,
+        description,
+        ownerId,
+        ownerType,
+        sellerId,
+        sellerName,amount,sellerContact,
     } = req.body;
     if (!( title && description&& ownerId&& ownerType&& 
         sellerId&& sellerName&&  amount&& sellerContact)) {
@@ -344,7 +349,7 @@ exports.UpdatedRecievedState = async (req, res) =>{
   return res.status(400).send({message:"No link Id provided"});
 }
 links.findById(linkId).then(async (link1) =>{
-  if(!link1.recieved && !link1.delivered){
+  if(!link1.recieved ){
   if(userId === link1.buyerId 
     && link1.status !=="complete" && link1.cashed === true){
     if(link1.delivered){
@@ -399,7 +404,7 @@ exports.UpdatedDelievedState = async (req, res) =>{
   return res.status(400).send({message:"No link Id provided"});
 }
 links.findById(linkId).then(async (link1) =>{
-  if(!link1.recieved && !link1.delivered){
+  if( !link1.delivered){
   if(userId === link1.sellerId 
     && link1.status !=="complete"  && link1.cashed === true){
     if(link1.recieved){

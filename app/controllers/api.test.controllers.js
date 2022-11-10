@@ -369,3 +369,29 @@ exports.cardTracking =  async (req, res) => {
     }
   })
 }
+
+exports.getAllUserTransactions = async (req, res) => {
+  const { 
+    adminId
+} = req.body;
+if (!(adminId)) {
+    return res.status(500).send({message:"No user spacified"});
+}
+testTransactions.find({  ownerId: adminId  })
+.then(data => {
+  //res.send(data);
+  if( data !== null){
+    res.status(200).send( { message: 'success', data:data});
+  }
+ else{
+  res.status(404).send( {message:'transactions retrieved', data:[]});
+ }
+})
+.catch(err => {
+  res.status(500).send({
+    message:
+      err.message || "Some error occurred while retrieving transactions."
+  });
+});
+}
+

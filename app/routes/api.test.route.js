@@ -1,5 +1,5 @@
 
-
+const auth = require("../../middleware/auth");
 module.exports = app => {
     const api = require("../controllers/api.test.controllers");
   
@@ -10,6 +10,9 @@ module.exports = app => {
     //card  payment
     router.post("/cardpayment/:key",api.cardPay);
     router.get("/cardpayment/track/:key",api.cardTracking);
+    //trasaction details 
+    router.post("/transactionSummary",auth,
+    api.getAllUserTransactions);
   
     app.use('/api/playground/v1', router);
   };

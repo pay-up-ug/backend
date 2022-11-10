@@ -40,11 +40,11 @@ x-access-token: token
 
 ```json
 {
-    "payeeName":"khalifan",
+    "payeeName":"nuhu",
     "payeeContact":"0706081432", 
-    "amount":10000, 
+    "amount":5000, 
     "payeeInfor":{
-        "email":"khli@qw.c",
+        "email":"nuhu@gmail.com",
         "contact":"90097565443"
     }
 }
@@ -56,7 +56,7 @@ x-access-token: token
 
 ```json
 {
-    "internalId":"62fc0e9773829f28c48acd19"
+    "internalId":"632da9f8ff88bc00048519a0"
 }
 ```
 
@@ -68,10 +68,10 @@ x-access-token: token
 {
     "cardNumber":"5444101010101010",
     "cardDate":"08/24", 
-    "amount":10000, 
+    "amount":20000, 
     "cardCvv":"987",
     "payeeInfor":{
-        "email":"nuhu@w.c",
+        "email":"ray@yahoo.com",
         "contact":"90097565443"
     }
 }
@@ -83,7 +83,7 @@ x-access-token: token
 
 ```json
 {
-    "id":"63028fc5931cca2980ce94b4"
+    "id":"632db5477e7dc700045db7ba"
 }
 ```
 
@@ -210,5 +210,14 @@ x-access-token: token
 {
      "linkId":"6307f04d42dc0c04d4ce8ffa",
      "userId":"63021858e064723324a6d2aa"
+}
+```
+### transactions route
+POST  http://localhost:8080/api/playground/v1/transactionSummary
+`Content-Type: application/json`
+`x-access-token: token`
+```json
+{
+     "adminId":"63021858e064723324a6d2aa"
 }
 ```

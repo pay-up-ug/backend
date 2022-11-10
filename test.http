@@ -1,7 +1,7 @@
-POST  http://localhost:8080/links/
+POST  http://localhost:8080/api/playground/v1/transactionSummary
 Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjMxZTVkYWQyYjRkM2IwMDA0NGZlMmMzIiwiZW1haWwiOiJyYWluQGdtYWlsLmNvbSIsImlhdCI6MTY2MzUwODY1MSwiZXhwIjoxNjYzNTEyMjUxfQ.xKQG26MSj6TuPWN0hXMPyAudIvxaoNQ9LX31rfudpFs
 
 {
-     "userId":"63021858e064723324a6d2aa"
+     "adminId":"63021858e064723324a6d2aa"
 }

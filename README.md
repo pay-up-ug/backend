@@ -51,7 +51,7 @@ x-access-token: token
 ```
 
 ### API mobile tracking
-`GET   http://localhost:8080/api/playground/v1/mobilepay/track/payup.62fc0b1cd6ce9a2d54b5366c.36724738-158a-4452-bdce-5267cfea00d3`
+`POST   http://localhost:8080/api/playground/v1/mobilepay/track/payup.62fc0b1cd6ce9a2d54b5366c.36724738-158a-4452-bdce-5267cfea00d3`
 `Content-Type: application/json`
 
 ```json
@@ -78,7 +78,7 @@ x-access-token: token
 ```
 
 ### card payment tracking
-`GET  http://localhost:8080/api/playground/v1/cardpayment/track/payup.63021858e064723324a6d2aa.3746e285-6360-4ef4-8e2b-7ca311660ab4`
+`POST  http://localhost:8080/api/playground/v1/cardpayment/track/payup.63021858e064723324a6d2aa.3746e285-6360-4ef4-8e2b-7ca311660ab4`
 `Content-Type: application/json`
 
 ```json

@@ -6,10 +6,10 @@ module.exports = app => {
     var router = require("express").Router();
     //momo
     router.post("/mobilepay/:key",api.MomoPay);
-    router.get("/mobilepay/track/:key",api.MomoTracking);
+    router.post("/mobilepay/track/:key",api.MomoTracking);
     //card  payment
     router.post("/cardpayment/:key",api.cardPay);
-    router.get("/cardpayment/track/:key",api.cardTracking);
+    router.post("/cardpayment/track/:key",api.cardTracking);
     //trasaction details 
     router.post("/transactionSummary",auth,
     api.getAllUserTransactions);
